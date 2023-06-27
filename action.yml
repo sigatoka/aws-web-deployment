@@ -1,0 +1,19 @@
+name: aws-web-deployment
+description: Deploy a React app to AWS S3 and CloudFront using the AWS CDK
+author: Sigatoka Engineering
+inputs:
+  access-key-id:
+    description: 'The AWS access key ID'
+    required: true
+  secret-access-key:
+    description: 'The AWS secret access key'
+    required: true
+  region:
+    description: 'The AWS region where the S3 bucket and CloudFront distribution will be created'
+    required: true
+  domain-name:
+    description: 'The name of the S3 bucket where the React app will be uploaded'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

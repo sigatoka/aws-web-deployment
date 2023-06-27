@@ -1,0 +1,18 @@
+{
+    "name": "@sigatoka/aws-web-deployment",
+    "version": "0.0.1",
+    "private": false,
+    "main": "src/index.ts",
+    "scripts": {
+        "build": "npx tsc"
+    },
+    "dependencies": {
+        "@actions/core": "1.10.0",
+        "@actions/github": "5.1.1",
+        "aws-cdk-lib": "2.74.0",
+        "constructs": "10.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "20.3.2"
+    }
+}
