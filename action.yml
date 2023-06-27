@@ -9,8 +9,9 @@ inputs:
     description: 'The AWS secret access key'
     required: true
   region:
-    description: 'The AWS region where the S3 bucket and CloudFront distribution will be created'
-    required: true
+    description: 'The AWS region where the S3 bucket and CloudFront distribution will be created. Default: us-east-1'
+  build-directory:
+    description: 'Absolute path to the directory containing your static site bundle'
   domain-name:
     description: 'The name of the S3 bucket where the React app will be uploaded'
     required: true
