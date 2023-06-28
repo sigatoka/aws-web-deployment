@@ -4,11 +4,11 @@ import { spawnSync } from "child_process";
 
 async function run() {
   try {
-    const accessKeyId = core.getInput("access-key-id", { required: true });
-    const secretAccessKey = core.getInput("secret-access-key", {
+    const accessKeyId = core.getInput("aws-access-key-id", { required: true });
+    const secretAccessKey = core.getInput("aws-secret-access-key", {
       required: true,
     });
-    const region = core.getInput("region", { required: true });
+    const region = core.getInput("aws-region", { required: true });
     const domainName = core.getInput("domain-name", { required: true });
 
     process.env.AWS_ACCESS_KEY_ID = accessKeyId;

@@ -30,7 +30,5 @@ export class StaticSiteStack extends cdk.Stack {
 
     distribution.attachHostedZone(hostedZone);
     distribution.deploySource(assetPath);
-
-    distribution.print();
   }
 }
